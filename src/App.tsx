@@ -5,7 +5,7 @@ import { Banner, Profile, Footer, Testimonials } from "./components";
 function App() {
   return (
     <>
-      {/* <Banner /> */}
+      <Banner />
       <Profile />
       <Testimonials />
       <Footer />

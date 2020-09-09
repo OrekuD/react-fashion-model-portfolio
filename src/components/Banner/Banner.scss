@@ -1,13 +1,28 @@
 .banner {
   display: flex;
+  position: relative;
+
+  @media (max-width: 580px) {
+    flex-direction: column;
+  }
 
   .content {
-    flex: 1;
+    width: 50%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @media (max-width: 580px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 10;
+    }
 
     .scroll-button {
       position: absolute;
@@ -20,26 +35,49 @@
       display: grid;
       place-items: center;
       cursor: pointer;
+
+      @media (max-width: 785px) {
+        left: 6vw;
+      }
     }
 
     .name-wrapper {
-      height: 70px;
       overflow-y: hidden;
 
       .name {
         font-size: 60px;
         font-family: PoppinsBold;
-        line-height: 65px;
+
+        @media (max-width: 970px) {
+          font-size: 50px;
+        }
+
+        @media (max-width: 785px) {
+          font-size: 36px;
+        }
+
+        @media (max-width: 580px) {
+          color: white;
+        }
 
         span {
           -webkit-text-stroke: 2px black;
           -webkit-text-fill-color: white;
+
+          @media (max-width: 580px) {
+            -webkit-text-stroke: 1px white;
+            -webkit-text-fill-color: transparent;
+          }
         }
       }
     }
     .description {
       font-size: 20px;
       text-align: start;
+
+      @media (max-width: 580px) {
+        color: white;
+      }
     }
   }
   .image {
@@ -47,11 +85,23 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
+    background: pink;
+
+    @media (max-width: 580px) {
+      height: 100vh;
+      width: 100vw;
+      filter: blur(2px);
+    }
 
     img {
       width: 50vw;
       height: 100vh;
       object-fit: cover;
+
+      @media (max-width: 580px) {
+        height: 100vh;
+        width: 100vw;
+      }
     }
 
     .overlay {

@@ -70,7 +70,7 @@ export const overlayVariant = {
     translateX: 0,
   },
   animate: {
-    translateX: "50vw",
+    translateX: "100%",
     transition: {
       ease,
       delay: 0.7,
