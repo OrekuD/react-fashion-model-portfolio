@@ -1,0 +1,20 @@
+.testimonials {
+  height: 70vh;
+
+  .testimonial {
+    margin: 0 auto;
+    width: fit-content;
+
+    .image {
+      width: 320px;
+      height: 450px;
+      display: flex;
+      overflow-x: hidden;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+footer {
+  display: flex;
+  padding: 50px 0;
+  //   align-items: center;
+  //   justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  .section {
+    margin: 0 auto;
+
+    .title {
+      text-transform: uppercase;
+      font-family: PoppinsBold;
+      margin-bottom: 20px;
+    }
+
+    .link {
+      text-transform: capitalize;
+      font-family: Poppins;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s ease all;
+
+      &:hover {
+        color: grey;
+      }
+    }
+
+    .mail {
+      text-transform: none;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+
+      .separator {
+        width: 2px;
+        height: 14px;
+        margin: 0 15px;
+        background-color: black;
+      }
+    }
+  }
+}
