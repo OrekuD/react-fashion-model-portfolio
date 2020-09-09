@@ -22,7 +22,7 @@ const Footer = () => (
     </div>
     <div className="section">
       <p className="title">Representation</p>
-      <p className="link">Bloom - France</p>
+      <p className="link">BloomInc - France</p>
       <p className="link mail">jesse@bloom.com</p>
     </div>
   </footer>

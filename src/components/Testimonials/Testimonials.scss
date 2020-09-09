@@ -1,5 +1,11 @@
 .testimonials {
-  height: 70vh;
+  padding: 50px 0;
+
+  .title {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+  }
 
   .testimonial {
     margin: 0 auto;
@@ -18,11 +24,6 @@
       place-items: center;
       cursor: pointer;
       border: none;
-      transition: 0.4s ease-out all;
-
-      &:hover {
-        box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.15);
-      }
 
       &:focus {
         outline: none;
@@ -30,12 +31,12 @@
     }
 
     .left {
-      left: -60px;
+      left: -70px;
       transform: rotate(180deg);
     }
 
     .right {
-      right: -60px;
+      right: -70px;
     }
 
     .image {

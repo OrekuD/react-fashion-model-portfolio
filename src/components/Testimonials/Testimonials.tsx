@@ -8,21 +8,22 @@ import {
   imageVariant,
   textVariants,
 } from "../../animationVariants/testimonialVariants";
+import { ease } from "../../animationVariants/bannerVariants";
 
 const testimonials = [
   {
-    name: "ghsjk asjhkl",
-    role: "massal",
+    name: "Jason Nelson",
+    role: "Photographer, Forbes Magazine",
     image: image1,
     comment:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia ab officiis delectus aliquid molestias ullam dolores nostrum quisquam, vero facilis.",
   },
   {
-    name: ";lodsl asjhkl",
-    role: "slk",
+    name: "Jessica ",
+    role: "Designer, Vogue",
     image: image2,
     comment:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia ab officiis delectus aliquid molestias ullam dolores nostrum quisquam, vero facilis.",
+      "She's very good at her job and shows a lot of passion and dedication.",
   },
 ];
 
@@ -30,12 +31,12 @@ const Testimonials = () => {
   const animation = useAnimation();
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const moveRight = async () => {
-    if (activeIndex === 1) {
+    if (activeIndex === testimonials.length - 1) {
       return;
     }
     animation.start("moveRight");
     await animation.start("fadeOut");
-    setActiveIndex(1);
+    setActiveIndex(activeIndex + 1);
     animation.start("fadeIn");
   };
 
@@ -45,19 +46,42 @@ const Testimonials = () => {
     }
     animation.start("moveLeft");
     await animation.start("fadeOut");
-    setActiveIndex(0);
+    setActiveIndex(activeIndex - 1);
     animation.start("fadeIn");
   };
 
   return (
     <div className="testimonials">
+      {/* <p className="title">What people say about me</p> */}
       <div className="testimonial">
-        <button className="svg left" onClick={moveLeft}>
-          <ArrowRight size={20} color="#0000ff" />
-        </button>
-        <button className="svg right" onClick={moveRight}>
-          <ArrowRight size={20} color="#0000ff" />
-        </button>
+        <motion.button
+          whileHover={{
+            boxShadow:
+              activeIndex === testimonials.length - 1
+                ? "1px 2px 20px rgba(0, 0, 0, 0.15)"
+                : "",
+            transition: {
+              ease,
+            },
+          }}
+          className="svg left"
+          onClick={moveLeft}
+        >
+          <ArrowRight size={20} color="#c29590" />
+        </motion.button>
+        <motion.button
+          whileHover={{
+            boxShadow:
+              activeIndex === 0 ? "1px 2px 20px rgba(0, 0, 0, 0.15)" : "",
+            transition: {
+              ease,
+            },
+          }}
+          className="svg right"
+          onClick={moveRight}
+        >
+          <ArrowRight size={20} color="#c29590" />
+        </motion.button>
         <div className="image">
           {testimonials.map(({ name, role, image, comment }, index) => (
             <motion.img

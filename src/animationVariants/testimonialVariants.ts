@@ -18,6 +18,7 @@ export const imageVariant = {
 export const textVariants = {
   fadeIn: {
     opacity: 1,
+    y: 0,
     transition: {
       ease,
       duration: 0.3,
@@ -25,6 +26,7 @@ export const textVariants = {
   },
   fadeOut: {
     opacity: 0,
+    y: 10,
     transition: {
       ease,
       duration: 0.3,
