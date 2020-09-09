@@ -1,3 +1,5 @@
+export const ease = [0.6, 0.05, -0.01, 0.9];
+
 export const containerVariant = {
   initial: {
     opacity: 0,
@@ -18,8 +20,6 @@ export const contentVariant = {
     },
   },
 };
-
-export const ease = [0.6, 0.05, -0.01, 0.9];
 
 export const nameVariant = {
   initial: {
@@ -67,10 +67,10 @@ export const buttonVariant = {
 
 export const overlayVariant = {
   initial: {
-    x: 0,
+    translateX: 0,
   },
   animate: {
-    x: "50vw",
+    translateX: "50vw",
     transition: {
       ease,
       delay: 0.7,

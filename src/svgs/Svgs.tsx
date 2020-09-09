@@ -78,3 +78,41 @@ export const Arrow = ({ size, color }: Props) => (
     </g>
   </svg>
 );
+
+export const ArrowRight = ({ size, color }: Props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size * 0.7}
+    viewBox="0 0 16.207 11.414"
+  >
+    <g transform="translate(-202 -185.793)">
+      <line
+        x2="15"
+        transform="translate(202.5 191.5)"
+        fill="none"
+        stroke={color}
+        strokeLinecap="round"
+        strokeWidth="1"
+      />
+      <line
+        x2="5"
+        y2="5"
+        transform="translate(212.5 186.5)"
+        fill="none"
+        stroke={color}
+        strokeLinecap="round"
+        strokeWidth="1"
+      />
+      <line
+        x2="5"
+        y2="5"
+        transform="translate(217.5 191.5) rotate(90)"
+        fill="none"
+        stroke={color}
+        strokeLinecap="round"
+        strokeWidth="1"
+      />
+    </g>
+  </svg>
+);

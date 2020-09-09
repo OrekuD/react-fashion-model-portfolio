@@ -3,17 +3,76 @@
 
   .testimonial {
     margin: 0 auto;
+    display: flex;
     width: fit-content;
+    position: relative;
+
+    .svg {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: calc(50% - 30px);
+      border-radius: 50%;
+      background-color: white;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      border: none;
+      transition: 0.4s ease-out all;
+
+      &:hover {
+        box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .left {
+      left: -60px;
+      transform: rotate(180deg);
+    }
+
+    .right {
+      right: -60px;
+    }
 
     .image {
       width: 320px;
       height: 450px;
       display: flex;
       overflow-x: hidden;
+      box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.15);
       img {
         height: 100%;
         width: 100%;
         object-fit: cover;
+      }
+    }
+
+    .content {
+      width: 320px;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 20px;
+
+      .comment {
+        font-size: 14px;
+      }
+
+      .name {
+        font-family: PoppinsBold;
+        color: grey;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      .role {
+        color: grey;
+        font-size: 14px;
       }
     }
   }
