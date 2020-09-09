@@ -8,7 +8,7 @@ export const imageVariant = {
     },
   },
   moveRight: {
-    translateX: -320,
+    translateX: "-100%",
     transition: {
       ease,
     },

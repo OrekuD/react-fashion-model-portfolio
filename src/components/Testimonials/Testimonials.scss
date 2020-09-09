@@ -1,6 +1,10 @@
 .testimonials {
   padding: 50px 0;
 
+  @media (max-width: 520px) {
+    padding: 20px 0;
+  }
+
   .title {
     text-align: center;
     font-size: 20px;
@@ -12,6 +16,11 @@
     display: flex;
     width: fit-content;
     position: relative;
+
+    @media (max-width: 750px) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .svg {
       position: absolute;
@@ -33,10 +42,18 @@
     .left {
       left: -70px;
       transform: rotate(180deg);
+
+      @media (max-width: 465px) {
+        left: 0px;
+      }
     }
 
     .right {
       right: -70px;
+
+      @media (max-width: 465px) {
+        right: 0px;
+      }
     }
 
     .image {
@@ -44,7 +61,20 @@
       height: 450px;
       display: flex;
       overflow-x: hidden;
-      box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.15);
+
+      @media (max-width: 750px) {
+        width: 280px;
+        height: 350px;
+      }
+
+      @media (max-width: 465px) {
+        width: 70%;
+      }
+
+      @media (max-width: 415px) {
+        width: 65%;
+      }
+
       img {
         height: 100%;
         width: 100%;
@@ -60,14 +90,21 @@
       justify-content: center;
       padding-left: 20px;
 
+      @media (max-width: 750px) {
+        width: 320px;
+        height: 140px;
+        padding-top: 20px;
+        justify-content: flex-start;
+      }
+
       .comment {
-        font-size: 14px;
+        font-size: 16px;
       }
 
       .name {
         font-family: PoppinsBold;
         color: grey;
-        margin-top: 10px;
+        margin-top: 15px;
         font-size: 14px;
       }
 

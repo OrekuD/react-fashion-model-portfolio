@@ -42,7 +42,7 @@ const Banner = () => (
           variants={buttonVariant}
           className="scroll-button"
         >
-          <Arrow size={16} color="#ffffff" />
+          <Arrow size={20} color="#ffffff" />
         </motion.div>
       </a>
     </motion.div>

@@ -8,22 +8,21 @@ import {
   imageVariant,
   textVariants,
 } from "../../animationVariants/testimonialVariants";
-import { ease } from "../../animationVariants/bannerVariants";
 
 const testimonials = [
   {
     name: "Jason Nelson",
-    role: "Photographer, Forbes Magazine",
+    role: "Photographer, Forbes",
     image: image1,
     comment:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia ab officiis delectus aliquid molestias ullam dolores nostrum quisquam, vero facilis.",
+      "She loves her work and is very good at it. It's awesome to work with her.",
   },
   {
     name: "Jessica ",
     role: "Designer, Vogue",
     image: image2,
     comment:
-      "She's very good at her job and shows a lot of passion and dedication.",
+      "She's very good at her work and shows a lot of passion and dedication.",
   },
 ];
 
@@ -58,10 +57,11 @@ const Testimonials = () => {
           whileHover={{
             boxShadow:
               activeIndex === testimonials.length - 1
-                ? "1px 2px 20px rgba(0, 0, 0, 0.15)"
+                ? "1px 2px 20px rgba(128, 128, 128, 0.4)"
                 : "",
             transition: {
-              ease,
+              ease: "linear",
+              duration: 0.5,
             },
           }}
           className="svg left"
@@ -72,9 +72,10 @@ const Testimonials = () => {
         <motion.button
           whileHover={{
             boxShadow:
-              activeIndex === 0 ? "1px 2px 20px rgba(0, 0, 0, 0.15)" : "",
+              activeIndex === 0 ? "1px 2px 20px rgba(128, 128, 128, 0.4)" : "",
             transition: {
-              ease,
+              ease: "linear",
+              duration: 0.5,
             },
           }}
           className="svg right"
