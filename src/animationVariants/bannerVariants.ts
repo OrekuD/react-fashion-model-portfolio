@@ -6,18 +6,7 @@ export const containerVariant = {
   },
   animate: {
     opacity: 1,
-    transition: {
-      delayChildren: 0.6,
-    },
-  },
-};
-
-export const contentVariant = {
-  animate: {
-    transition: {
-      delayChildren: 0.6,
-      staggerChildren: 0.2,
-    },
+    delayChildren: 0.5,
   },
 };
 
@@ -73,8 +62,8 @@ export const overlayVariant = {
     translateX: "100%",
     transition: {
       ease,
-      delay: 0.7,
-      duration: 0.9,
+      delay: 0.6,
+      duration: 0.8,
     },
   },
 };
@@ -89,8 +78,8 @@ export const imageVariant = {
     opacity: 1,
     transition: {
       ease,
-      delay: 0.9,
-      duration: 0.9,
+      delay: 0.8,
+      duration: 0.8,
     },
   },
 };

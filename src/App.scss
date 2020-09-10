@@ -7,17 +7,5 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  font-family: Poppins;
-}
-
-@font-face {
-  font-family: Poppins;
-  src: url(./assets/fonts/Poppins-Regular.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: PoppinsBold;
-  src: url(./assets/fonts/Poppins-SemiBold.ttf);
-  font-display: swap;
+  font-family: "Poppins";
 }

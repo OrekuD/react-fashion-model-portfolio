@@ -39,6 +39,10 @@
       @media (max-width: 785px) {
         left: 6vw;
       }
+
+      @media (max-width: 580px) {
+        bottom: 70px;
+      }
     }
 
     .name-wrapper {
@@ -46,7 +50,7 @@
 
       .name {
         font-size: 60px;
-        font-family: PoppinsBold;
+        font-weight: 600;
 
         @media (max-width: 970px) {
           font-size: 50px;
@@ -90,7 +94,7 @@
     @media (max-width: 580px) {
       height: 100vh;
       width: 100vw;
-      filter: blur(2px);
+      filter: blur(1px);
     }
 
     img {

@@ -16,7 +16,8 @@ const Profile = () => (
       <p className="label-1">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
         praesentium dolores voluptatem quia exercitationem est quasi dolor
-        libero in? Sequi.
+        libero in? Sequi. Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Nostrum, illo.
       </p>
     </div>
   </div>

@@ -18,7 +18,7 @@ const testimonials = [
       "She loves her work and is very good at it. It's awesome to work with her.",
   },
   {
-    name: "Jessica ",
+    name: "Jessica",
     role: "Designer, Vogue",
     image: image2,
     comment:
@@ -29,6 +29,7 @@ const testimonials = [
 const Testimonials = () => {
   const animation = useAnimation();
   const [activeIndex, setActiveIndex] = useState<number>(0);
+
   const moveRight = async () => {
     if (activeIndex === testimonials.length - 1) {
       return;
@@ -51,7 +52,6 @@ const Testimonials = () => {
 
   return (
     <div className="testimonials">
-      {/* <p className="title">What people say about me</p> */}
       <div className="testimonial">
         <motion.button
           whileHover={{

@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { Arrow } from "../../svgs/Svgs";
 import {
   containerVariant,
-  contentVariant,
   nameVariant,
   descriptionVariant,
   buttonVariant,
@@ -20,7 +19,7 @@ const Banner = () => (
     animate="animate"
     className="banner"
   >
-    <motion.div variants={contentVariant} className="content">
+    <div className="content">
       <div>
         <div className="name-wrapper">
           <motion.p variants={nameVariant} className="name">
@@ -45,7 +44,7 @@ const Banner = () => (
           <Arrow size={20} color="#ffffff" />
         </motion.div>
       </a>
-    </motion.div>
+    </div>
     <motion.div className="image">
       <motion.div className="overlay" variants={overlayVariant} />
       <motion.img variants={imageVariant} src={model} alt="Model" />

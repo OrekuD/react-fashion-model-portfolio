@@ -18,7 +18,7 @@ const Footer = () => (
     </div>
     <div className="section">
       <p className="title">Contact</p>
-      <p className="link mail">hello@khalidaudrey.com</p>
+      <p className="link mail">hello@khaledaudrey.com</p>
     </div>
     <div className="section">
       <p className="title">Representation</p>

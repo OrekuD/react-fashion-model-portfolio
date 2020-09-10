@@ -5,12 +5,6 @@
     padding: 20px 0;
   }
 
-  .title {
-    text-align: center;
-    font-size: 20px;
-    margin: 20px 0;
-  }
-
   .testimonial {
     margin: 0 auto;
     display: flex;
@@ -104,7 +98,7 @@
       }
 
       .name {
-        font-family: PoppinsBold;
+        font-weight: 600;
         color: grey;
         margin-top: 15px;
         font-size: 14px;
